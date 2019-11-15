@@ -1,13 +1,22 @@
 ﻿using System.Collections;
 using UnityEngine;
 
-public class MouseHover : MonoBehaviour {
+public class MouseHover : MonoBehaviour
+{
 
     // Start is called before the first frame update
-void Start() => renderer.material.color = Color.white;
+    void Start()
+    {
+        renderer.material.color = Color.black;
+    }
 
-void OnMouseEnter() => Renderer.material.color = Color.yellow;
+    void OnMouseEnter()
+    {
+        renderer.material.color = Color.red;
+    }
 
-void OnMouseExit() => Renderer.material.color = Color.white;
-
+    void OnMouseExit()
+    {
+        renderer.material.color = Color.black;
+    }
 }

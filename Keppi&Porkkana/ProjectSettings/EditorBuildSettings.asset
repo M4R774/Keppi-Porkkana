@@ -4,5 +4,11 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: 4ecf5e3eb4e77124382104ce157fbb05
+  - enabled: 1
+    path: Assets/Scenes/Keppi and porkkana.unity
+    guid: 2a9d680a5d6ba480ea25717114541e35
   m_configObjects: {}

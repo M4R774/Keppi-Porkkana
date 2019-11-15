@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: e57b68a723b9fcb4da2da2da3713b3bb
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Eraser
+  fontNames:
+  - Eraser
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 3faefbef561c94743b9e58202056c7b6, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

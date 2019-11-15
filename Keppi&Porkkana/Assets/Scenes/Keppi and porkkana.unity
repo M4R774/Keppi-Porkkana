@@ -560,6 +560,7 @@ GameObject:
   - component: {fileID: 680778551}
   - component: {fileID: 680778550}
   - component: {fileID: 680778549}
+  - component: {fileID: 680778552}
   m_Layer: 0
   m_Name: lifeschool
   m_TagString: Untagged
@@ -640,6 +641,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 680778547}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &680778552
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 680778547}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3013c673f88ecb64ebd8d9e4a143d774, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &755051892
 GameObject:
   m_ObjectHideFlags: 0
@@ -1374,6 +1387,7 @@ GameObject:
   - component: {fileID: 2005994993}
   - component: {fileID: 2005994992}
   - component: {fileID: 2005994991}
+  - component: {fileID: 2005994994}
   m_Layer: 0
   m_Name: school
   m_TagString: Untagged
@@ -1454,3 +1468,15 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2005994989}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &2005994994
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2005994989}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e740dcfa7fbac78429fdbcb41608a6a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

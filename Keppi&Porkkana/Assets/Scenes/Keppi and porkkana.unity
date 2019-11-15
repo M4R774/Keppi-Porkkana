@@ -356,6 +356,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: kid
       objectReference: {fileID: 0}
+    - target: {fileID: 1829549139703218, guid: 9b2fa1b2add2b4add98e484bd4cee38a, type: 3}
+      propertyPath: m_TagString
+      value: Child
+      objectReference: {fileID: 0}
     - target: {fileID: 4792072621831088, guid: 9b2fa1b2add2b4add98e484bd4cee38a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

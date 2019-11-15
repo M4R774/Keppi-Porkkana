@@ -10,7 +10,7 @@ public class SchoolLogic : MonoBehaviour
         //Check for a match with the specific tag on any GameObject that collides with your GameObject
         if (collision.gameObject.tag == "Child")
         {
-            destroy(collision.gameObject);
+            Destroy(collision.gameObject);
             AddMoney();
         }
     }

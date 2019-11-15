@@ -215,13 +215,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   child: {fileID: 329856724}
-  wait_time_between_spawning: 0
+  wait_time_between_spawning: 2
   spawn_area:
-    max_x: 0
-    min_x: 0
-    y: 0
-    max_z: 0
-    min_z: 0
+    max_x: 10
+    min_x: -10
+    y: 0.402
+    max_z: 10
+    min_z: -10
 --- !u!4 &203453022
 Transform:
   m_ObjectHideFlags: 0

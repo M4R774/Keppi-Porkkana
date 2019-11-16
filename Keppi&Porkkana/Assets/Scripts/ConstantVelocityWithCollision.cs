@@ -17,7 +17,7 @@ public class ConstantVelocityWithCollision : MonoBehaviour
     }
 
     void OnCollisionEnter(Collision collision){
-        // ReflectProjectile(_rb, collision.contacts[0].normal);
+        ReflectProjectile(_rb, collision.contacts[0].normal);
     }
 
     private void ReflectProjectile(Rigidbody rb, Vector3 reflectVector)

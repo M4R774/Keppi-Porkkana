@@ -531,9 +531,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 197124238}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c7297fb4b843c3b43a61a08229220835, type: 3}
+  m_Script: {fileID: 11500000, guid: 4d7ab28910b469b41ba56eec43b88475, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scoreAmount: {fileID: 197124241}
 --- !u!114 &197124241
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8029,7 +8030,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52a2d75c3d6eee44ba47ac822eea054b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetTime: 60
+  targetTime: 5
 --- !u!114 &1618338884
 MonoBehaviour:
   m_ObjectHideFlags: 0

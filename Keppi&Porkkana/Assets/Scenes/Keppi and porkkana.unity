@@ -6432,8 +6432,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba7960cfb4df71b40a841c3656c31935, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stick_up_height: 0
-  stick_down_height: 0
+  stick_up_height: 5
+  stick_down_height: 0.5
   stick_down_time: 0
   maxDistance: 100
   layerMask:
@@ -6462,11 +6462,11 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1320826979}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: f02890a1b73b0fc479988f77c1e4d840, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2, y: 2, z: 2}
+  m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1320826983
 MeshRenderer:

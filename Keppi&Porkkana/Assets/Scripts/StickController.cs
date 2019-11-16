@@ -6,7 +6,6 @@ public class StickController : MonoBehaviour
 {
     public float maxDistance; 
     public LayerMask layerMask;
-
     private Vector3 mouse_pos;
     private Vector3 target_pos;
     private bool stick_should_be_down;
@@ -16,8 +15,8 @@ public class StickController : MonoBehaviour
     void FixedUpdate() {
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
         RaycastHit hit;
-        if(Physics.Raycast(ray, out hit, maxDistance, layerMask)){
-            transform.position.Set(hit.point.x, 2, hit.point.z);
+        if(Physics.Raycast(ray, out hit, maxDistance, layerMask)) {
+            GetComponent<Rigidbody>().AddForce((hit.point - transform.position) * 100);
         }
     }
 

@@ -14,7 +14,7 @@ public class ConstantVelocityWithCollision : MonoBehaviour
 
         _velocity = new Vector3(0f, 0f, 3f);
         //transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(_velocity), 0.15F);
-        _rb.AddForce(_velocity, ForceMode.VelocityChange);
+        _rb.AddRelativeForce(_velocity, ForceMode.VelocityChange);
     }
 
     void OnCollisionEnter(Collision collision){

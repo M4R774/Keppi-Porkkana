@@ -28,24 +28,37 @@ public class StickController : MonoBehaviour
 
     void Update() {
         if (Input.GetMouseButtonDown(0) && StickLoweringIsAvailable()) { 
-            stick_lowered_until = Time.time + stick_down_time;
+            //stick_lowered_until = Time.time + stick_down_time;
+            PutStickDown();
         }
-        else {
+        else if (Input.GetMouseButtonUp(0)) {
             // TODO: Report to player, why putting stick down is not possible
+            PutStickUp();
         }
-        DetermineStickHeight();
+        // DetermineStickHeight();
     }
 
 
     void DetermineStickHeight() {
         if (stick_lowered_until < Time.time) { 
             stick_target_height = stick_up_height; 
+            GetComponent<Renderer>().material.color = new Color(1.0f, 0, 0, 0.5f);
         }
         else {
+            GetComponent<Renderer>().material.color = new Color(1.0f, 0, 0, 1.0f);
             stick_target_height = stick_down_height; 
         }
     }
 
+    void PutStickUp() { 
+        stick_target_height = stick_up_height; 
+        GetComponent<Renderer>().material.color = new Color(1.0f, 0, 0, 0.5f);
+    }
+
+    void PutStickDown() {
+            GetComponent<Renderer>().material.color = new Color(1.0f, 0, 0, 1.0f);
+            stick_target_height = stick_down_height; 
+    }
 
     bool StickLoweringIsAvailable() {
         return true;

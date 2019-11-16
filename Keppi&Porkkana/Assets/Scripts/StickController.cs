@@ -31,7 +31,7 @@ public class StickController : MonoBehaviour
         if(Physics.Raycast(ray, out hit, maxDistance, layerMask)) {
             Vector3 target = hit.point;
             target.y = stick_target_height;
-            GetComponent<Rigidbody>().AddForce((target - transform.position) * 100);
+            GetComponent<Rigidbody>().AddForce((target - transform.position) * 1000);
             // TODO: Height
         }
         RotateStickTowardsTarget();

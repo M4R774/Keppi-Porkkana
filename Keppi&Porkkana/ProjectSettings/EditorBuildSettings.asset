@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Keppi and porkkana.unity
     guid: 2a9d680a5d6ba480ea25717114541e35
+  - enabled: 1
+    path: Assets/Scenes/ScoreScreen.unity
+    guid: 491c9df2f8459b94a9343849ae2239ac
   m_configObjects: {}

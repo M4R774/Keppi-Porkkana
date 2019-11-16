@@ -38,4 +38,9 @@ public class ChildSpawner : MonoBehaviour
                             spawn_area.y, 
                             Random.Range(spawn_area.min_z, spawn_area.max_z)); 
     }
+
+    private void Start()
+    {
+        ScoreCounter.scoreValue = 0;
+    }
 }

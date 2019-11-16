@@ -4,10 +4,6 @@ using UnityEngine;
 
 public class SchoolLogic : MonoBehaviour
 {
-    private ScoreCounter scoreCounter;
-    void Start() {
-         scoreCounter = GameObject.FindGameObjectWithTag("ScoreAmount").GetComponent<ScoreCounter>();
-    }
     
     //Detect collisions between the GameObjects with Colliders attached
     void OnCollisionEnter(Collision collision)
@@ -20,9 +16,6 @@ public class SchoolLogic : MonoBehaviour
         }
     }
     private void AddMoney() {
-        if(scoreCounter != null)
-        {
-            scoreCounter.IncreaseScore(1);
-        }
+        ScoreCounter.IncreaseScore(1);
     }
 }

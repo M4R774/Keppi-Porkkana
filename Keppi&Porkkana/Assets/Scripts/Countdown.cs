@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class Countdown: MonoBehaviour {
 
     public float targetTime = 60.0f;
+
     private Text countDownLabel;
 
     private void Start()

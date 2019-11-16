@@ -4,31 +4,23 @@ using UnityEngine;
 using UnityEngine.UI;
 using System;
 
-public class ScoreCounter : MonoBehaviour
+public static class ScoreCounter
 {
     // Start is called before the first frame update
 
-    Text scoreAmount;
-    private int scoreValue;
-    void Start()
-    {
-        scoreValue = 0;
-        scoreAmount = GetComponent<Text>();  
-    }
+    public static Text scoreAmount;
+    public static int scoreValue;
 
-    public int GetScoreValue()
+    public static int GetScoreValue()
     {
         return scoreValue;
     }
 
-    public void IncreaseScore(int increaseAmount)
+    public static void IncreaseScore(int increaseAmount)
     {
-        this.scoreValue += increaseAmount;
-        scoreAmount.text = this.scoreValue.ToString();
+        scoreValue += increaseAmount;
+        scoreAmount.text = scoreValue.ToString();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-    }
+
 }

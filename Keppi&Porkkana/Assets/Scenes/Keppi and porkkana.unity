@@ -152,7 +152,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1322965624}
-  m_RootOrder: 11
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 45, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -6782,13 +6782,13 @@ Transform:
   - {fileID: 680778548}
   - {fileID: 1226285121}
   - {fileID: 1181331314}
-  - {fileID: 393305673}
   - {fileID: 2015494254}
+  - {fileID: 393305673}
+  - {fileID: 46106920}
   - {fileID: 1674613431}
   - {fileID: 495188497}
   - {fileID: 1553428843}
   - {fileID: 65452564}
-  - {fileID: 46106920}
   - {fileID: 307783344}
   m_Father: {fileID: 0}
   m_RootOrder: 3
@@ -7210,7 +7210,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52a2d75c3d6eee44ba47ac822eea054b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetTime: 60
+  targetTime: 5
 --- !u!114 &1618338884
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7753,7 +7753,7 @@ Transform:
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 1322965624}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &2015494255
 MeshRenderer:

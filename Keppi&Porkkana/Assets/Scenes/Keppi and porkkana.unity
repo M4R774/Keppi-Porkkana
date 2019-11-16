@@ -199,7 +199,7 @@ GameObject:
   - component: {fileID: 197124240}
   m_Layer: 5
   m_Name: ScoreAmount
-  m_TagString: Untagged
+  m_TagString: ScoreAmount
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

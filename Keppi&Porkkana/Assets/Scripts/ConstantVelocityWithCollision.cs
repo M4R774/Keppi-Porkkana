@@ -13,7 +13,6 @@ public class ConstantVelocityWithCollision : MonoBehaviour
         _rb = this.GetComponent<Rigidbody>();
 
         _velocity = new Vector3(0f, 0f, 3f);
-        //transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(_velocity), 0.15F);
         _rb.AddRelativeForce(_velocity, ForceMode.VelocityChange);
     }
 
@@ -24,7 +23,6 @@ public class ConstantVelocityWithCollision : MonoBehaviour
     private void ReflectProjectile(Rigidbody rb, Vector3 reflectVector)
     {    
         _velocity = Vector3.Reflect(_velocity, reflectVector);
-        //transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(_velocity), 0.15F);
         _rb.velocity = _velocity;
     }
 
@@ -32,7 +30,9 @@ public class ConstantVelocityWithCollision : MonoBehaviour
     void Update()
     {
         _rb = this.GetComponent<Rigidbody>();
-        transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(_rb.velocity), 0.15F);
+        if (_rb.velocity != Vector3.zero) {
+            transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(_rb.velocity), 0.15F);
+        }
     }
 
 }

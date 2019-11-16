@@ -11,8 +11,8 @@ Here are the results:
 2. Send those kids to school! 
 
 ## Credits
-Lauri Viitanen
-Tatu Heinämäki
-Tatu Lindroos
-Aleksi Martikainen
-Valtteri Kostiainen
+- Lauri Viitanen
+- Tatu Heinämäki
+- Tatu Lindroos
+- Aleksi Martikainen
+- Valtteri Kostiainen

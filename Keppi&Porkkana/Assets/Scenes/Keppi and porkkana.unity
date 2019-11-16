@@ -7105,9 +7105,6 @@ MonoBehaviour:
   layerMask:
     serializedVersion: 2
     m_Bits: 256
-  Kp: 1
-  Ki: 1
-  Kd: 1
 --- !u!54 &1320826981
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -7154,7 +7151,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c1349c7d811aef148b3957559863ff9b, type: 2}
+  - {fileID: 2100000, guid: 60d45ad329d9544b4bf92d11e68bfbe4, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -9275,8 +9272,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aea15d2c8b168464ca22e3c203c06435, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attractedTo: {fileID: 680778547}
-  strengthOfAttraction: 1000
 --- !u!1 &1935153826595817
 GameObject:
   m_ObjectHideFlags: 0

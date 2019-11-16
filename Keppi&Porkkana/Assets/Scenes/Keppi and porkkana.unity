@@ -199,7 +199,7 @@ GameObject:
   - component: {fileID: 197124240}
   m_Layer: 5
   m_Name: ScoreAmount
-  m_TagString: Untagged
+  m_TagString: ScoreAmount
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -220,7 +220,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -90.8, y: 181.2}
+  m_AnchoredPosition: {x: -39.1, y: 125.8}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &197124240
@@ -6227,6 +6227,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba7960cfb4df71b40a841c3656c31935, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  stick_up_height: 5
+  stick_down_height: 0
+  stick_down_time: 2
   maxDistance: 100
   layerMask:
     serializedVersion: 2
@@ -6245,13 +6248,8 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 84
-  m_CollisionDetection: 0
+  m_CollisionDetection: 3
 --- !u!65 &1320826982
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1320826979}
   m_Material: {fileID: 13400000, guid: f02890a1b73b0fc479988f77c1e4d840, type: 2}
@@ -6505,7 +6503,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -136.94, y: 181.2}
+  m_AnchoredPosition: {x: -82.1, y: 126.2}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1499138912
@@ -6676,7 +6674,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}

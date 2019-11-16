@@ -531,9 +531,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 197124238}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c7297fb4b843c3b43a61a08229220835, type: 3}
+  m_Script: {fileID: 11500000, guid: 4d7ab28910b469b41ba56eec43b88475, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scoreAmount: {fileID: 197124241}
 --- !u!114 &197124241
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7231,10 +7232,6 @@ Transform:
   - {fileID: 2015494254}
   - {fileID: 393305673}
   - {fileID: 46106920}
-  - {fileID: 1674613431}
-  - {fileID: 495188497}
-  - {fileID: 1553428843}
-  - {fileID: 65452564}
   - {fileID: 307783344}
   - {fileID: 1810272799}
   - {fileID: 65452564}

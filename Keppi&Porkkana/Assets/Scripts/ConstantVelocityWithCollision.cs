@@ -23,7 +23,10 @@ public class ConstantVelocityWithCollision : MonoBehaviour
     private void ReflectProjectile(Rigidbody rb, Vector3 reflectVector)
     {    
         _velocity = Vector3.Reflect(_velocity, reflectVector);
-        _rb.velocity = _velocity;
+        if (_velocity != Vector3.zero)
+        {
+            _rb.velocity = _velocity;
+        }
     }
 
 

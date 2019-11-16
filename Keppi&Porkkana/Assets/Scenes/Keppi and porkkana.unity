@@ -7105,6 +7105,9 @@ MonoBehaviour:
   layerMask:
     serializedVersion: 2
     m_Bits: 256
+  Kp: 1
+  Ki: 1
+  Kd: 1
 --- !u!54 &1320826981
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -8027,7 +8030,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52a2d75c3d6eee44ba47ac822eea054b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetTime: 5
+  targetTime: 60
 --- !u!114 &1618338884
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9272,6 +9275,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aea15d2c8b168464ca22e3c203c06435, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  attractedTo: {fileID: 0}
+  strengthOfAttraction: 0.5
 --- !u!1 &1935153826595817
 GameObject:
   m_ObjectHideFlags: 0

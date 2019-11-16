@@ -235,7 +235,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   attractedTo: {fileID: 0}
-  strengthOfAttraction: 0.1
+  strengthOfAttraction: 0.15
 --- !u!1 &7827720940120978303
 GameObject:
   m_ObjectHideFlags: 0

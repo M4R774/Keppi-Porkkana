@@ -605,7 +605,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   child: {fileID: 7827705197828377461, guid: 6ea9b6556507c46a3804ec610bbeb634, type: 3}
-  wait_time_between_spawning: 0.01
+  wait_time_between_spawning: 0.03
   spawn_area:
     max_x: 14.5
     min_x: -14.5

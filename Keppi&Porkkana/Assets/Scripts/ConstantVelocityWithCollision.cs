@@ -16,21 +16,8 @@ public class ConstantVelocityWithCollision : MonoBehaviour
         _rb.AddRelativeForce(_velocity, ForceMode.VelocityChange);
     }
 
-    void OnCollisionEnter(Collision collision){
-        // ReflectProjectile(_rb, collision.contacts[0].normal);
-    }
 
-    private void ReflectProjectile(Rigidbody rb, Vector3 reflectVector)
-    {    
-        _velocity = Vector3.Reflect(_velocity, reflectVector);
-        if (_velocity != Vector3.zero)
-        {
-            _rb.velocity = _velocity;
-        }
-    }
-
-
-    void Update()
+    void FixedUpdate()
     {
         _rb = this.GetComponent<Rigidbody>();
         if (_rb.velocity != Vector3.zero) {

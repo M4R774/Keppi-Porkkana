@@ -7,8 +7,6 @@ using System;
 public static class ScoreCounter
 {
     // Start is called before the first frame update
-
-    public static Text scoreAmount;
     public static int scoreValue;
 
     public static int GetScoreValue()
@@ -19,7 +17,6 @@ public static class ScoreCounter
     public static void IncreaseScore(int increaseAmount)
     {
         scoreValue += increaseAmount;
-        scoreAmount.text = scoreValue.ToString();
     }
 
 

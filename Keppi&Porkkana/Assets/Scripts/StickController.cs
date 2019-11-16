@@ -24,6 +24,10 @@ public class StickController : MonoBehaviour
     private float P, I, D;
 
 
+    void Start() {
+        PutStickUp();
+    }
+
     // FixedUpdate is called once physics per frame
     void FixedUpdate() {
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
@@ -32,7 +36,6 @@ public class StickController : MonoBehaviour
             Vector3 target = hit.point;
             target.y = stick_target_height;
             GetComponent<Rigidbody>().AddForce((target - transform.position) * 1000);
-            // TODO: Height
         }
         RotateStickTowardsTarget();
     }
@@ -84,10 +87,6 @@ public class StickController : MonoBehaviour
             kulma = -2.0f + kulma;
         }
         float force = PID(kulma);
-        Debug.Log(  "   Rotation targe: " + rotation_target + 
-                    "   rotation.y: " + transform.rotation.y + 
-                    "   Kulma: " + kulma + 
-                    "   Force: " + force);
         GetComponent<Rigidbody>().AddTorque(new Vector3(0, force, 0));
     }
 

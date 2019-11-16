@@ -827,11 +827,10 @@ GameObject:
   - component: {fileID: 680778550}
   - component: {fileID: 680778549}
   - component: {fileID: 680778552}
-  - component: {fileID: 680778553}
   - component: {fileID: 680778554}
   m_Layer: 0
   m_Name: lifeschool
-  m_TagString: Untagged
+  m_TagString: LifeSchool
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -921,21 +920,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3013c673f88ecb64ebd8d9e4a143d774, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &680778553
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 680778547}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aea15d2c8b168464ca22e3c203c06435, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  attractedTo: {fileID: 8454372829278763345, guid: 12d1bb8788a5f4aa3bf93d173a05c2ba,
-    type: 3}
-  strengthOfAttraction: 10
 --- !u!54 &680778554
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -7859,6 +7843,7 @@ GameObject:
   - component: {fileID: 329856726}
   - component: {fileID: 1829548848776034}
   - component: {fileID: 1829548848776035}
+  - component: {fileID: 1829548848776036}
   m_Layer: 0
   m_Name: kid
   m_TagString: Child
@@ -7892,6 +7877,20 @@ CapsuleCollider:
   m_Height: 1
   m_Direction: 1
   m_Center: {x: 0, y: 1, z: 0}
+--- !u!114 &1829548848776036
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1829548848776033}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aea15d2c8b168464ca22e3c203c06435, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attractedTo: {fileID: 680778547}
+  strengthOfAttraction: 1000
 --- !u!1 &1935153826595817
 GameObject:
   m_ObjectHideFlags: 0

@@ -9,20 +9,26 @@ public class ScoreCounter : MonoBehaviour
     // Start is called before the first frame update
 
     Text scoreAmount;
-    private int frames;
+    private int scoreValue;
     void Start()
     {
+        scoreValue = 0;
         scoreAmount = GetComponent<Text>();  
+    }
+
+    public int GetScoreValue()
+    {
+        return scoreValue;
+    }
+
+    public void IncreaseScore(int increaseAmount)
+    {
+        this.scoreValue += increaseAmount;
+        scoreAmount.text = this.scoreValue.ToString();
     }
 
     // Update is called once per frame
     void Update()
     {
-        frames++;
-        if(frames % 10 == 0)
-        {
-            int scoreValue = Int32.Parse(scoreAmount.text);
-            scoreAmount.text = (scoreValue + 1).ToString();
-        }
     }
 }
